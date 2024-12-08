@@ -1,0 +1,17 @@
+<p>voting works!</p>
+<div>
+    <h1>Submit Election Data</h1>
+    
+    <button (click)="submitData()">Submit</button>
+  
+    <div *ngIf="response">
+      <h3>Response:</h3>
+      <pre>{{ response }}</pre>
+    </div>
+  
+    <div *ngIf="errorMessage" style="color: red;">
+      <h3>Error:</h3>
+      <p>{{ errorMessage }}</p>
+    </div>
+  </div>
+  
